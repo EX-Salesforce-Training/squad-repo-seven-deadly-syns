@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 1px solid black;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -19,7 +20,19 @@ a:hover {
   color: coral;
 }
 
-.hobbies {
+table {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  width: 150px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.skills-hobbies {
   display: flex;
   background-color: brown;
   justify-content: center;
@@ -29,4 +42,12 @@ a:hover {
   background: -webkit-linear-gradient(to right, #3a6073, #6c5b7b, #3a6073);
   background: linear-gradient(to right, #3a6073, #4389a2, #3a6073);
   color: white;
+  font-size: larger;
+}
+
+.list {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
 }
