@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 1px solid black;
+}
+
+body {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 94, 165);
+}
+
+a:hover {
+  color: coral;
+}
+
+.hobbies {
+  display: flex;
+  background-color: brown;
+  justify-content: center;
+  height: 32px;
+  align-items: center;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(to right, #3a6073, #6c5b7b, #3a6073);
+  background: linear-gradient(to right, #3a6073, #4389a2, #3a6073);
+  color: white;
+}
