@@ -1,0 +1,22 @@
+:root{
+    --text:#ffffff;
+  }
+
+  html{
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    color: var(--text);
+  }
+  
+  body{
+    background-color: #181818;
+  }
+  
+  .hobbies{
+    text-align: center;
+  }
+  
+  ul{
+    list-style-position: inside;
+  }
