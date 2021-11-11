@@ -5,8 +5,11 @@
 }
 
 body {
-  border: 1px solid black;
-  margin: 10px;
+  border: 1px solid #4389a2;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 150px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -14,6 +17,9 @@ body {
 a {
   text-decoration: none;
   color: rgb(8, 94, 165);
+  /* color: linear-gradient(to right, #3a6073, #4389a2, #3a6073); */
+
+  /* color: #3a6073; */
 }
 
 a:hover {
@@ -50,4 +56,112 @@ img {
   margin: 10px;
   padding: 10px;
   font-size: 20px;
+}
+
+/* calculator styling  */
+
+#container {
+  padding: 20px;
+  margin: 10px;
+}
+
+#calculator {
+  width: 350px;
+  height: 580px;
+  background-color: #eaedef;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 5);
+}
+
+.results-container {
+  margin-top: 10px;
+}
+#result {
+  display: flex;
+  height: 80px;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 10px;
+  justify-content: flex-end;
+  background-color: #20b2aa;
+}
+
+#keyboard {
+  height: 400px;
+}
+
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #4e4444;
+}
+
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 20px 40px;
+  font-size: 30px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 100%;
+  border-width: 2px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.number,
+.empty {
+  background-color: #eaedef;
+}
+
+.number,
+.operator {
+  cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #20b2aa;
+}
+
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: darkorange;
+}
+
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: hotpink;
+}
+
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: dodgerblue;
+}
+
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: rebeccapurple;
 }
