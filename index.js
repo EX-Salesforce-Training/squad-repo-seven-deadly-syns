@@ -31,7 +31,7 @@ function reverseNumberFormat(num) {
   return Number(num.replace(/,/g, ""));
 }
 
-var operator = document.getElementsByClassName("operator");
+const operator = document.getElementsByClassName("operator");
 for (var i = 0; i < operator.length; i++) {
   operator[i].addEventListener("click", function () {
     if (this.id == "clear") {
@@ -69,7 +69,7 @@ for (var i = 0; i < operator.length; i++) {
   });
 }
 
-var number = document.getElementsByClassName("number");
+const number = document.getElementsByClassName("number");
 for (var i = 0; i < number.length; i++) {
   number[i].addEventListener("click", function () {
     var output = reverseNumberFormat(getOutput());
