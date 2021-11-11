@@ -1,0 +1,32 @@
+body
+{
+    background-color: blue;
+    color: white;
+}
+
+a
+{
+    color: white;
+}
+
+.image
+{
+    width: 500px;
+    length: 600px;
+}
+/*
+div 
+{
+    background-color: black;
+}
+
+span 
+{
+    font-size: 5em;
+}
+
+.divClass
+{
+    background-color: orange;
+}
+*/
