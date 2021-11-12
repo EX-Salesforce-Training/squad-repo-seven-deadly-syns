@@ -5,10 +5,10 @@
         h1 {color: red;
       text-align: center;
         font-size:50px}
-        h2{color: blue;
+        h2{color:purple;
       text-align: center;
-        font-size:20px}
-         h3{color: blue;
+        font-size:25px}
+         caption{color: blue;
       text-align: left;
         font-size:30px}
         
@@ -18,76 +18,10 @@
       margin-right: auto;
      
     }
-    section {
-    <DOCTYPE! html>
-    <html>
-    <head> 
-      <style>
-        h1 {color: red;
-      text-align: center;
-        font-size:50px}
-        h2{color: blue;
-      text-align: center;
-        font-size:20px}
-         h3{color: blue;
-      text-align: left;
-        font-size:30px}
-        
-        img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-     
-    }
-    section {
-    display: flex;
-    justify-content:space-evenly;
-    }
-        ul {font-size:30px;
-            color:blue;
-        text-align: left;}
-        li {font-size:20px;
-            color:black;
-        text-align: left;}
-        th{font-size:20px;
-            color:blue;
-        text-align: left;}
-        td{font-size:20px;
-            color:black;
-        text-align: left;}
-      
-      </style>
-      </head>
-      <body>
-        <h1>ABOUT ME & MY HOBBIES</h1>
-        
-        <h2> I am a simple person with simple hobbies</h2>
-        <img src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/02/29113959/hobby-money-1024x512.png" alt="HobbyImage">
-        <section>
-        <ul>Laundry List of my hobbies
-          <li>Reading</li>
-          <li>Watching the News</li>
-          <li>shopping for cables</li>
-      </ul>
-          <h3> Table of Hobbies</h3>
-      <table>
-      <tr>
-        <th>Hobby-Name</th>
-        <th>Priority</th>
-      </tr>
-      <tr>
-        <td>Reading</td>
-        <td>High</td>
-      </tr>
-      <tr>
-        <td>News</td>
-        <td>High</td>
-      </tr>
-     </table>
-      </section>
-      </p2>
-    </body>
-    </html>
+        section {
+          display:flex;
+          justify-content: space-evenly;
+          }
     
         ul {font-size:30px;
             color:blue;
@@ -96,11 +30,14 @@
             color:black;
         text-align: left;}
         th{font-size:20px;
-            color:blue;
+            color:purple;
         text-align: left;}
         td{font-size:20px;
             color:black;
         text-align: left;}
+        h3 {color: red;
+          text-align: center;
+            font-size:30px
       
       </style>
       </head>
@@ -113,25 +50,27 @@
         <ul>Laundry List of my hobbies
           <li>Reading</li>
           <li>Watching the News</li>
-          <li>shopping for cables</li>
+          <li>Doing Arithmetic</li>
       </ul>
-          <h3> Table of Hobbies</h3>
-      <table>
-      <tr>
+      <table border="1">
+        <caption>Hobby Table</caption>
+      <tr>        
         <th>Hobby-Name</th>
         <th>Priority</th>
       </tr>
       <tr>
         <td>Reading</td>
         <td>High</td>
-      </tr>
-      <tr>
+      </tr>      
         <td>News</td>
         <td>High</td>
-      </tr>
+       </tr>
+      <tr>
+        <td>Doing Arithmetic</td>
+        <td>High</td>
+       </tr>
      </table>
       </section>
-      </p2>
-    </body>
+         </body>
     </html>
     
