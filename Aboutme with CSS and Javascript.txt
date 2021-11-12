@@ -1,0 +1,137 @@
+<<DOCTYPE! html>
+    <html>
+    <head> 
+      <style>
+        h1 {color: red;
+      text-align: center;
+        font-size:50px}
+        h2{color:purple;
+      text-align: center;
+        font-size:25px}
+         caption{color: blue;
+      text-align: left;
+        font-size:30px}
+        
+        img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
+        section {
+          display:flex;
+          justify-content: space-evenly;
+          }
+    
+        ul {font-size:30px;
+            color:blue;
+        text-align: left;}
+        li {font-size:20px;
+            color:black;
+        text-align: left;}
+        th{font-size:20px;
+            color:purple;
+        text-align: left;}
+        td{font-size:20px;
+            color:black;
+        text-align: left;}
+        h3 {color: red;
+          text-align: center;
+            font-size:30px
+      
+      </style>
+      </head>
+      <body>
+        <h1>ABOUT ME & MY HOBBIES</h1>
+        
+        <h2> I am a simple person with simple hobbies</h2>
+        <img src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/02/29113959/hobby-money-1024x512.png" alt="HobbyImage">
+        <section>
+        <ul>Laundry List of my hobbies
+          <li>Reading</li>
+          <li>Watching the News</li>
+          <li>Doing Arithmetic</li>
+      </ul>
+      <table border="1">
+        <caption>Hobby Table</caption>
+      <tr>        
+        <th>Hobby-Name</th>
+        <th>Priority</th>
+      </tr>
+      <tr>
+        <td>Reading</td>
+        <td>High</td>
+      </tr>      
+        <td>News</td>
+        <td>High</td>
+       </tr>
+      <tr>
+        <td>Doing Arithmetic</td>
+        <td>High</td>
+       </tr>
+     </table>
+      </section>
+      <div>
+        <h3>HELP ME WITH MY ARITHMETIC OBSESSION. USE MY CALCULATOR</h3>
+<form>
+   <label for="First Number">First Number:</label>
+  <input type="Text" id="fnum" name="First Number">
+  
+      <select name="op" id="operator">
+        <option value="">Choose an Operator</option>
+         <option value="+">+</option>
+         <option value="-">-</option>
+         <option value="*">*</option>
+         <option value="/">/</option>
+      </select>
+  <label for="Second Number">Second Number:</label>
+  <input type="Text" id="snum" name="Second Number">
+   <input type="button" name="clickbtn" value="=" onclick="result()">
+ <input type="Text" id="num" name="Display"> 
+</form>
+
+        <script>
+          function result(){ 
+          var _total;
+          var _fnum;
+          var _snum;
+          var _op;
+            _fnum = parseInt(document.getElementById ("fnum").value);
+            
+          _snum = parseInt(document.getElementById("snum").value);
+          _op = document.getElementById("operator").value;
+          
+           switch (_op){
+            case "+": Add(_fnum, _snum);break;
+            case "-": Subtract(_fnum,_snum);break;
+            case "*": Multiply(_fnum, _snum);break;
+            case "/": Divide(_fnum, _snum);break;
+            // default: Nully();break;
+                     };           
+ 
+          };
+          Add(let a,let b){
+          let c= a+b;
+          document.getElementById("num").value= c;}
+          Subtract(let d,let e){
+          let f= d-c;
+          document.getElementById("num").value= e;}
+          Multiply(let f,let g){
+          let h= f*g;;
+          document.getElementById("num").value= h;}
+          Divide(let i,let j){
+          let k= i+j;
+          document.getElementById("num").value= k;}
+          Nully(){
+          let l=null;
+          document.getElementById("num").value= l;}     
+                 
+          
+          
+        </script>
+        
+       
+         </div>        
+    </body>
+    </html>
+    
