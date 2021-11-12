@@ -3,6 +3,7 @@
 <head>
     <title>About Me</title>
     <link rel="stylesheet" href=TDStyle.css>
+    <script src="TDJS.js"></script>
 </head>
 <body>
     <center>
@@ -78,5 +79,30 @@
             </table>
         </div>
         <br/>
+        <br/>
+        <h1>Let's do some math!</h1>
+        <br/>
+        Select your Mathematical Operation from one of the options below:
+        <br/>
+        <br/>
+        <input type="radio" name="operation" value="Multiplication">
+        <label for="multiplication">Multiply</label>
+        <input type="radio" name="operation" value="Addition">
+        <label for="addition">Add</label>
+        <input type="radio" name="operation" value="Division">
+        <label for="division">Divide</label>
+        <input type="radio" name="operation" value="Subtraction">
+        <label for="subtraction">Subtract</label>
+        <br/>
+        <br/>
+        Please type in the first number you'd like to use: <input type="number" id="firstNumber">
+        <br/>
+        <br/>
+        Please type in the second number you'd like to use: <input type="number" id="secondNumber">
+        <br/>
+        <br/>
+        <button id="calculate">Calculate!</button>
+        <br/>
+        <p id="result"></p>
 </body>
 </html>
