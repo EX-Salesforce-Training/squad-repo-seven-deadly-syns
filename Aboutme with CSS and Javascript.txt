@@ -1,4 +1,4 @@
-<<DOCTYPE! html>
+<DOCTYPE! html>
     <html>
     <head> 
       <style>
@@ -37,7 +37,10 @@
         text-align: left;}
         h3 {color: red;
           text-align: center;
-            font-size:30px
+          font-size:30px;}
+              form {color: blue;
+          text-align: center;
+          font-size:30px;}
       
       </style>
       </head>
@@ -86,19 +89,18 @@
       </select>
   <label for="Second Number">Second Number:</label>
   <input type="Text" id="snum" name="Second Number">
-   <input type="button" name="clickbtn" value="=" onclick="result()">
+   <input type="button" name="clickbtn" value="Click Me =" onclick="result()">
  <input type="Text" id="num" name="Display"> 
 </form>
-
         <script>
           function result(){ 
           var _total;
           var _fnum;
           var _snum;
           var _op;
-            _fnum = parseInt(document.getElementById ("fnum").value);
+            _fnum = Number(document.getElementById ("fnum").value);
             
-          _snum = parseInt(document.getElementById("snum").value);
+          _snum = Number(document.getElementById("snum").value);
           _op = document.getElementById("operator").value;
           
            switch (_op){
@@ -110,28 +112,24 @@
                      };           
  
           };
-          Add(let a,let b){
+         function Add(a,b){
           let c= a+b;
           document.getElementById("num").value= c;}
-          Subtract(let d,let e){
-          let f= d-c;
-          document.getElementById("num").value= e;}
-          Multiply(let f,let g){
+          function Subtract(d,e){
+          let f= d-e;
+          document.getElementById("num").value= f;}
+          function Multiply(f,g){
           let h= f*g;;
           document.getElementById("num").value= h;}
-          Divide(let i,let j){
-          let k= i+j;
+          function Divide(i,j){
+          let k= i/j;
           document.getElementById("num").value= k;}
-          Nully(){
+          function Nully(){
           let l=null;
           document.getElementById("num").value= l;}     
-                 
-          
-          
         </script>
-        
-       
-         </div>        
-    </body>
+</body>
     </html>
     
+       
+        
