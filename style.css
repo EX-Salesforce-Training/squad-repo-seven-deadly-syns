@@ -66,6 +66,7 @@ img {
 }
 
 #calculator {
+  display: grid;
   width: 350px;
   height: 580px;
   background-color: #eaedef;
