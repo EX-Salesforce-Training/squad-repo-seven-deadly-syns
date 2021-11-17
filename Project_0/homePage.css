@@ -1,0 +1,103 @@
+.header
+{
+  display: flex;
+  align-items:center;
+}
+
+.logo
+{
+  background-color: black;
+  margin-left: 30%;
+  width: 20%;
+}
+
+.navigation
+{
+  display: flex;
+  margin-right: 20%;
+}
+
+.navLinks
+{
+  padding: 2%;
+  list-style-type: none;
+}
+
+.flagshipTitle
+{
+  margin-left: 10%;
+  float: left;
+  width: 40%;
+}
+
+.titles1stGroup
+{
+  float: left;
+  width: 20%;
+}
+
+.titles2ndGroup
+{
+  margin-right: 10%;
+  float: left;
+  width: 20%;
+}
+
+.titles::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.newsLeft
+{
+  margin-left: 10%;
+  float: left;
+  width: 40%;
+}
+
+.newsRight
+{
+  margin-right: 10%;
+  float: left;
+  width: 40%;
+}
+
+.news::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.allTitles
+{
+  display: flex;
+  justify-content: center;
+}
+
+.allNews
+{
+  display: flex;
+  justify-content: center;
+}
+
+.btn
+{
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/**/
+.btn:hover {background: green;}
+/**/
+
+.footNav
+{
+  display: flex;
+  justify-content: center;
+}
