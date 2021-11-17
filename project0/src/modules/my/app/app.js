@@ -1,4 +1,5 @@
 import { LightningElement, api } from 'lwc';
+
 import data from './data';
 
 export default class App extends LightningElement {
