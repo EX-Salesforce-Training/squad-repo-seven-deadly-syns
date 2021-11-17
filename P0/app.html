@@ -1,0 +1,19 @@
+<template>
+    <div class="Top">
+      <h1><img src="https://thumbs.dreamstime.com/b/tire-rim-disc-brake-seen-gold-spokes-shiny-black-car-sunny-day-silver-wheels-can-be-radial-golden-129151078.jpg" style="width:80px;height:80px;">
+        <br>
+  {title}
+      </h1>
+      <div>
+      <button type="button" name="choice" onclick={divDisplay}>About Us</button>
+      <button type="button" name="choice" onclick={divDisplay}>Book An Appointment</button>
+      </div>
+      <br>
+      <div class="AboutUs">
+      <c-about-us></c-about-us>
+    </div>
+    <div class="Appointment">
+    <c-appointment></c-appointment>
+    </div>
+    </div>
+  </template>
