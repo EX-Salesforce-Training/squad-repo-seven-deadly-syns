@@ -1,0 +1,8 @@
+<template>
+<span>
+<button class='navigation' > {buttonlabel}
+</button>
+</span>
+</template>
+
+
