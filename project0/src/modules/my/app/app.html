@@ -1,27 +1,5 @@
 <template>
-    <div class="header-basic">
-        <header>
-            <form class="d-flex">
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                    Search
-                </button>
-            </form>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Help</a></li>
-                <li class="list-inline-item">
-                    <a href="#">Cart</a>
-                </li>
-            </ul>
-        </header>
-    </div>
+    <my-header></my-header>
 
     <template for:each={myData} for:item="product">
         <div key={nikeId}>
@@ -31,7 +9,7 @@
 
             <template for:each={product.nike} for:item="nike">
                 <div key={nike.id}>
-                    <my-nike nike={nike} key={nike.id}></my-nike>
+                    <my-nike nike={nike} key={nike.id} cart={cart}></my-nike>
                 </div>
             </template>
         </div>
@@ -76,23 +54,5 @@
         </div>
     </template>
 
-    <div class="footer-basic">
-        <footer>
-            <H2>Follow US</H2>
-            <div class="social">
-                <a href="#"><i class="icon ion-social-instagram"></i></a
-                ><a href="#"><i class="icon ion-social-snapchat"></i></a
-                ><a href="#"><i class="icon ion-social-twitter"></i></a
-                ><a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Help</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">ProCleats © 2021</p>
-        </footer>
-    </div>
+    <my-footer></my-footer>
 </template>
