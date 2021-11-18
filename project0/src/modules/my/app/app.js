@@ -11,7 +11,7 @@ export default class App extends LightningElement {
     @api input = '';
 
     about =
-        'We Are ProCleats and we have the best professional sports clearts in the market';
+        'We Are Pro Cleats and we have the best professional sports clearts in the market';
 
     handleSubmit(event) {
         this.input = event.target.value;
