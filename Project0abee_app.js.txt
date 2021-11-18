@@ -1,0 +1,29 @@
+import { LightningElement } from "lwc";
+
+export default class App extends LightningElement {
+  
+
+  
+
+  
+  get returnButton() {
+    return [
+      {
+        buttonlabel:"Home",
+      },
+      {
+        buttonlabel: "Listings",
+      },
+      {
+        buttonlabel:"MLS Search",
+      },
+      {
+      buttonlabel:"Agents",
+      },
+      {
+        buttonlabel:"Contact Us",
+      }
+
+    ];
+  }
+}
