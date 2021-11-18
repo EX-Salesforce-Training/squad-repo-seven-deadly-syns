@@ -1,0 +1,63 @@
+
+.searchFlight {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flightResults {
+    background-color: white;
+    display: flex;
+    
+}
+
+.buttonSearch {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.buttonSearch span:hover {
+    background-color: lightskyblue;
+    cursor: pointer;
+  }
+
+  .buttonSearch span {
+    background-color: blue;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+}
+
+.searchFlight label {
+    margin-bottom: 10px;
+}
+
+.searchResults {
+    width: 80%;
+    background-color:lightslategray;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.flightsTable {
+    font: 1rem 'Fira Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.flightRow {
+    font: 1rem 'Fira Sans', sans-serif;
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.flightsTable div, .flightRow div{
+    width: 33%;
+}

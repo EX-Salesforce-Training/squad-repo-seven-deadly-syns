@@ -1,0 +1,36 @@
+<template>
+    <div class="searchFlight">
+
+        <div style="padding-right: 20px;">
+            <label>Where from?</label>
+            <my-airport-search-box onchild={handleChild} departure="1"></my-airport-search-box>
+        </div>
+        <div style="padding-right: 20px;">
+            <label>Where to?</label>
+            <my-airport-search-box onchild={handleChild} departure="0"></my-airport-search-box>
+        </div>
+        <div style="padding-right: 20px;">
+            <label style="display: block;">Departure</label>
+            <my-date-picker onchild={handleDate}></my-date-picker>
+        </div>
+
+        <div class="buttonSearch">
+            <span onclick={handleSearchButton}>Search Flights</span> 
+        </div>
+        
+    </div>
+    <div if:true={searchAttempted} class="searchResults">
+        <div class="flightsTable">
+            <div>From</div>
+            <div>To</div>
+            <div>Time</div>
+        </div>
+        <template for:each={foundFlights} for:item="flight" >
+            <div key={flight.Id} class="flightRow">
+                <div key={flight.Id}>{flight.Airport_id_from}</div>
+                <div key={flight.Id}>{flight.Airport_id_to}</div>
+                <div key={flight.Id}>{flight.Date}</div>
+            </div>
+        </template>
+    </div>
+</template>
