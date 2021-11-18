@@ -68,6 +68,11 @@ h3 {
     list-style: none;
 }
 
+.header-logo-nav .cart {
+    height: 30px;
+    margin-top: 2px;
+}
+
 .header-logo-nav li {
     padding: 0 80px;
 }
