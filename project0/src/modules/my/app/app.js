@@ -1,25 +1,26 @@
-import { LightningElement, api } from 'lwc';
-
-import data from './data';
+import { LightningElement, api, track, wire } from 'lwc';
 
 export default class App extends LightningElement {
-    nikeId = 1;
-    adidasId = 2;
-    underarmourId = 3;
-    newbalanceId = 4;
-    @api myData = data;
-    @api input = '';
+    checkout = false;
+    continue = false;
+    checkBack = false;
+    addToCart = false;
 
-    about =
-        'We Are Pro Cleats and we have the best professional sports clearts in the market';
+    handleAddToCart(event) {
+        this.addToCart = event.detail.value;
+    }
 
-    handleSubmit(event) {
-        this.input = event.target.value;
-        let filtered = input.toLowerCase();
-        return this.myData.filter((product) => {
-            if (product) {
-                product.adidas.filter((item) => item.name !== filtered);
-            }
-        });
+    handleCheckout(event) {
+        this.checkout = event.detail.value;
+        this.continue = event.detail.value;
+        this.checkBack = event.detail.value;
+    }
+
+    get isAddToCart() {
+        return this.addToCart === true;
+    }
+
+    get isCheckout() {
+        return this.checkout === true;
     }
 }

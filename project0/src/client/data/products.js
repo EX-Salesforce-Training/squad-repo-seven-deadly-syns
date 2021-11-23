@@ -1,23 +1,30 @@
-const data = [
+const products = [
     {
         nike: [
             {
                 id: 1,
-                name: 'Nike Mercurial Superfly 8 ',
-                price: '$199.99',
-                image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a30b35dc-9615-42df-b944-8f0bfc987837/mercurial-superfly-8-elite-fg-firm-ground-soccer-cleats-DBtHQg.png'
+                name: 'Nike Mercurial Superfly 8 Elite',
+                price: '$280',
+                image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/97bfa4e4-e245-4fc8-a38b-182a8eefe473/custom-nike-mercurial-superfly-8-elite-by-you.png'
             },
+
             {
                 id: 2,
                 name: 'Nike Mercurial Superfly 8 Pro FG',
                 price: '$199.99',
-                image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2e9a7ab2-5813-4131-9cef-4347fbcba860/mercurial-superfly-8-pro-fg-firm-ground-soccer-cleat-hpgDrm.png'
+                image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a529869e-e0f3-4b7a-885f-9f2d0b8481b8/mercurial-superfly-8-academy-mg-multi-ground-soccer-cleats-pbJFG6.png'
             },
             {
                 id: 3,
                 name: 'Nike Phantom GT2',
                 price: '$275',
                 image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e8e4d4a8-87ab-423d-ab0b-fdf2a72571e0/phantom-gt2-pro-dynamic-fit-fg-firm-ground-soccer-cleat-MVcTKP.png'
+            },
+            {
+                id: 1,
+                name: 'Nike Mercurial Superfly 8 ',
+                price: '$199.99',
+                image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3c49ad45-d77b-4933-80f8-72f09d01a0df/custom-nike-phantom-gt-elite-by-you.png'
             }
         ]
     },
@@ -89,4 +96,4 @@ const data = [
     }
 ];
 
-export default data;
+export default products;

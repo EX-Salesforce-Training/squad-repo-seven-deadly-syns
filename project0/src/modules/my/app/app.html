@@ -1,58 +1,7 @@
 <template>
-    <my-header></my-header>
-
-    <template for:each={myData} for:item="product">
-        <div key={nikeId}>
-            <template if:true={product.nike}>
-                <h3 key={nikeId}>NIKE</h3>
-            </template>
-
-            <template for:each={product.nike} for:item="nike">
-                <div key={nike.id}>
-                    <my-nike nike={nike} key={nike.id} cart={cart}></my-nike>
-                </div>
-            </template>
-        </div>
-
-        <div key={adidasId}>
-            <template if:true={product.adidas}>
-                <h3>ADIDAS</h3>
-            </template>
-            <template for:each={product.adidas} for:item="adidas">
-                <div key={adidas.id}>
-                    <my-adidas adidas={adidas} key={adidas.id}></my-adidas>
-                </div>
-            </template>
-        </div>
-
-        <div key={underarmourId}>
-            <template if:true={product.underarmour}>
-                <h3>UNDER ARMOUR</h3>
-            </template>
-            <template for:each={product.underarmour} for:item="underarmour">
-                <div key={underarmour.id}>
-                    <my-underarmour
-                        underarmour={underarmour}
-                        key={underarmour.id}
-                    ></my-underarmour>
-                </div>
-            </template>
-        </div>
-
-        <div key={newbalanceId}>
-            <template if:true={product.newbalance}>
-                <h3>NEW BALANCE</h3>
-            </template>
-            <template for:each={product.newbalance} for:item="newbalance">
-                <div key={newbalance.id}>
-                    <my-newbalance
-                        newbalance={newbalance}
-                        key={newbalance.id}
-                    ></my-newbalance>
-                </div>
-            </template>
-        </div>
-    </template>
-
+    <my-navbar></my-navbar>
+    <my-home></my-home>
+    <my-about></my-about>
+    <my-contactus></my-contactus>
     <my-footer></my-footer>
 </template>
