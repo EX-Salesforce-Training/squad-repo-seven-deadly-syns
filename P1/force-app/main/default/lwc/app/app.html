@@ -1,0 +1,22 @@
+<template>
+  <div class="Top">
+    <h1><img src="https://thumbs.dreamstime.com/b/tire-rim-disc-brake-seen-gold-spokes-shiny-black-car-sunny-day-silver-wheels-can-be-radial-golden-129151078.jpg" style="width:80px;height:80px;">
+    <br>
+    <center>
+      {title}
+      <br><br><br>
+      <lightning-button label="About Us" onclick={handleClick}></lightning-button>
+      <lightning-button label="Class Registration" onclick={handleClick}></lightning-button>
+    </center>
+    </h1>
+    <br>
+    <div>
+      <template if:true={isAboutUs}>
+        <c-about-us></c-about-us>
+      </template>
+      <template if:true={isAppointment}>
+        <c-appointment></c-appointment>
+      </template>
+    </div>
+  </div>
+  </template>
