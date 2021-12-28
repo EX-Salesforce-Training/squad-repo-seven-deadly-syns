@@ -1,0 +1,11 @@
+.footNav
+{
+  display: flex;
+  justify-content: center;
+}
+
+.navLinks
+{
+  padding: 5px;
+  list-style-type: none;
+}
