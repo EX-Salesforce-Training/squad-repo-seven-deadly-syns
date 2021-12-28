@@ -1,0 +1,8 @@
+<template>
+    <c-navigation-Bar onnavigationswitch={handleNavigation}></c-navigation-Bar>
+    <c-game-Titles if:true={HomePage}></c-game-Titles>
+    <c-news-Events if:true={HomePage}></c-news-Events>
+    <c-under-Construction if:false={HomePage}></c-under-Construction>
+    <c-footer onnavigationswitch={handleNavigation}></c-footer>
+    <!--<c-home-page if:true={HomePage}></c-home-page>-->
+</template>
