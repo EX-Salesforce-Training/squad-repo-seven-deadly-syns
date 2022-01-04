@@ -1,0 +1,13 @@
+// Use .soql files to store SOQL queries.
+// You can execute queries in VS Code by selecting the
+//     query text and running the command:
+//     SFDX: Execute SOQL Query with Currently Selected Text
+
+// sfdx force:data:soql:query --query "SELECT Id, Family, MSRP__c, Name, Picture_URL__c, Description, ProductCode FROM Product2 WHERE CreatedDate > 2021-12-08T01:02:03Z" -u project-I -d data
+
+//SELECT Id, Family, MSRP__c, Name, Picture_URL__c, Description, ProductCode FROM Product2 WHERE CreatedDate > 2021-12-08T01:02:03Z
+
+SELECT Id, Name FROM Account
+
+
+
