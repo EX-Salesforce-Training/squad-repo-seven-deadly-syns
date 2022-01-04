@@ -1,0 +1,21 @@
+<template>
+    <lightning-card class="footer-basic">
+        <footer>
+            <H2>Follow US</H2>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a
+                ><a href="#"><i class="icon ion-social-snapchat"></i></a
+                ><a href="#"><i class="icon ion-social-twitter"></i></a
+                ><a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <template for:each={footerList} for:item="footer">
+                    <li class="list-inline-item" key={footer}>
+                        <a href="#">{footer}</a>
+                    </li>
+                </template>
+            </ul>
+            <p class="copyright">Pro Cleats © 2021</p>
+        </footer>
+    </lightning-card>
+</template>

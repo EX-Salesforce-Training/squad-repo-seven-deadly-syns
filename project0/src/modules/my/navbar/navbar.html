@@ -19,18 +19,12 @@
                 </ul>
             </div>
 
-            <form class="d-flex" onsubmit={handleSubmit}>
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                    value={input}
-                />
+            <form class="d-flex" onsubmit={handlSearch}>
+                <input class="d-flex" type="search" placeholder="Search..." />
                 <button
                     class="btn btn-outline-success"
                     type="submit"
-                    onclick={handleSubmit}
+                    onclick={handleSearch}
                 >
                     Search
                 </button>
@@ -38,44 +32,3 @@
         </header>
     </div>
 </template>
-
-<!-- <template>
-    <div class="header-basic">
-        <header>
-            <div class="header-logo-nav">
-                <img src="../../../resources/logo.jpg" />
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Home</a></li>
-                    <li class="list-inline-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="list-inline-item"><a href="#">Help</a></li>
-                    <li class="list-inline-item">
-                        <a href="#"
-                            ><img
-                                class="cart"
-                                src="../../../resources/cart.jpg"
-                        /></a>
-                    </li>
-                </ul>
-            </div>
-
-            <form class="d-flex" onsubmit={handleSubmit}>
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                    value={input}
-                />
-                <button
-                    class="btn btn-outline-success"
-                    type="submit"
-                    onclick={handleSubmit}
-                >
-                    Search
-                </button>
-            </form>
-        </header>
-    </div>
-</template> -->
