@@ -2,9 +2,9 @@
 
 
 
-## How Do You Plan to Deploy Your Changes?
+## Project Description
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Create a compelling experience from a business previously explored with Lightning web components as the primary user interface. These are surfaced through the use of Experience Cloud to create a customer or partner experience site that allows for the use of these new features, along with supporting Apex classes/triggers and declarative customizations.
 
 ## Configure Your Salesforce DX Project
 
