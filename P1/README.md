@@ -6,9 +6,25 @@ Create a compelling experience from a business previously explored with Lightnin
 
 ## Technologies Used
 
+- Apex
+- HTML
+- CSS
+- JavaScript
+- Lightning Web Components
+- Salesforce
+
 ## Features
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- An LWC that switches between an About Us page to a Student Registration Page
+- Custom Salesforce Objects for storing Students and Courses
+- A Dashboard that shows the number of Students that have failed and passed courses
+- A Trigger that prevents duplicate Students
+
+To do:
+- Rendering the Student Registration Page
+- Creating a Trigger that prevents a Student from taking a later course without taking the prerequisite courses first
+- Creating a Helper Class for Triggers
+- Creation of the Sales & Experience Cloud Site
 
 ## Getting Started
 
