@@ -21,6 +21,7 @@ Create a compelling experience from a business previously explored with Lightnin
 - A Trigger that prevents duplicate Students
 
 To do:
+
 - Rendering the Student Registration Page
 - Creating a Trigger that prevents a Student from taking a later course without taking the prerequisite courses first
 - Creating a Helper Class for Triggers
@@ -28,9 +29,13 @@ To do:
 
 ## Getting Started
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. Run this Git Bash command: git clone. 
+2. Open the downloaded file in Visual Studio Code.
+3. Using the Command Palette (CTRL + SHIFT + P by default) Authorize an Org and Dev Hub.
+4. Still using the Command Palette, create a Scratch Org and Push the files to the Org.
+5. Once complete, use the Command Palette and Open Default Org.
 
 ## Usage
+
+1. Go to the App Manager, and type in "Golden Spoke Driving School"
+2. There should be two results. The one with the custom icon is the Custom App that shows the Dashboard, Students, and Products. The other is the LWC that was created.
